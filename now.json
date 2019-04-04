@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "team-bandit",
+  "builds": [
+    { "src": "index.py", "use": "@now/python@0.0.42-canary.2" }
+  ],
+  "routes": [
+    { "src": "/.*", "dest": "/" }
+  ],
+  "build": {
+    "env": {
+      "SLACK_API_TOKEN": "TODO"
+    }
+  },
+  "github": {
+    "silent": true
+  }
+}
